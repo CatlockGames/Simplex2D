@@ -20,6 +20,8 @@ public class Animation {
 	
 	/**
 	 * 
+	 * @param frames
+	 * @param frameDelay
 	 */
 	public Animation(BufferedImage[] frames, int frameDelay) {
 		this.frameDelay = frameDelay;

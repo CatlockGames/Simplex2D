@@ -21,6 +21,9 @@ public class Sprite {
 	
 	/**
 	 * 
+	 * @param fileName
+	 * @param width
+	 * @param height
 	 */
 	public Sprite(String fileName, int width, int height) {
 		this.sheet = null;

@@ -12,6 +12,7 @@ import example.ExampleState;
 
 /**
  * @author Aaron
+ * @author Ryan
  *
  */
 public class GameStateManager {

@@ -14,6 +14,8 @@ public class Vector2d {
 	
 	/**
 	 * 
+	 * @param x
+	 * @param y
 	 */
 	public Vector2d(double x, double y) {
 		this.x = x;
@@ -22,6 +24,7 @@ public class Vector2d {
 	
 	/**
 	 * 
+	 * @param v
 	 */
 	public Vector2d(Vector2d v) {
 		this.x = v.x;
@@ -38,8 +41,7 @@ public class Vector2d {
 	
 	/**
 	 * 
-	 * @param sin
-	 * @param cos
+	 * @param angle
 	 * @return
 	 */
 	public Vector2d rotate(double angle) {
@@ -64,6 +66,11 @@ public class Vector2d {
 		return new Vector2d(x - v.x, y - v.y);
 	}
 	
+	/**
+	 * 
+	 * @param scale
+	 * @return
+	 */
 	public Vector2d scale(double scale) {
 		return new Vector2d(x * scale, y * scale);
 	}

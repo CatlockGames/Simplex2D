@@ -20,6 +20,7 @@ import javax.swing.JPanel;
 
 /**
  * @author Aaron
+ * @author Ryan
  *
  */
 @SuppressWarnings("serial")

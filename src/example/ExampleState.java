@@ -13,6 +13,7 @@ import game.GameStateManager;
 
 /**
  * @author Aaron
+ * @author Ryan
  *
  */
 public class ExampleState extends GameState {
