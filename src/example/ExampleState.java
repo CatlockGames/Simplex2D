@@ -3,13 +3,15 @@
  */
 package example;
 
+import game.GamePanel;
+import game.GameState;
+import game.GameStateManager;
+
+import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseWheelEvent;
-
-import game.GameState;
-import game.GameStateManager;
 
 /**
  * @author Aaron
@@ -35,6 +37,11 @@ public class ExampleState extends GameState {
 
 	@Override
 	public void render(Graphics2D g2d) {
+		//Clear the screen
+		g2d.setColor(Color.BLACK);
+		g2d.fillRect(0, 0, GamePanel.WIDTH, GamePanel.HEIGHT);
+		
+		//Other drawing.
 	}
 
 	@Override
