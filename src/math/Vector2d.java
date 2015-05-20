@@ -11,7 +11,7 @@ package math;
 public class Vector2d {
 	public double x;
 	public double y;
-	public double magnitude;
+	public double m;
 	
 	/**
 	 * 
@@ -21,7 +21,7 @@ public class Vector2d {
 	public Vector2d(double x, double y) {
 		this.x = x;
 		this.y = y;
-		this.magnitude = Math.sqrt(dot(this));
+		this.m = Math.sqrt(dotProduct(this));
 	}
 	
 	/**
@@ -74,7 +74,7 @@ public class Vector2d {
 	 * @param v
 	 * @return
 	 */
-	public double dot(Vector2d v) {
+	public double dotProduct(Vector2d v) {
 		return x * v.x + y * v.y;
 	}
 	
@@ -83,8 +83,8 @@ public class Vector2d {
 	 * @param v
 	 * @return
 	 */
-	public Vector2d project(Vector2d v) {
-		return v.scale(dot(v) / Math.pow(v.magnitude, 2));
+	public Vector2d normalize(Vector2d v) {
+		return new Vector2d(v.x / v.m, v.y / v.m);
 	}
 	
 }
